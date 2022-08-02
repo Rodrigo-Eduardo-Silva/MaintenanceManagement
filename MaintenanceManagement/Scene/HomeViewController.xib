@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="MaintenanceManagement" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lC9-U4-Ev0">
+                    <rect key="frame" x="0.0" y="696" width="414" height="70"/>
+                    <color key="backgroundColor" red="0.87058823529999996" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="kst-BA-nlZ"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Entrar">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="ShowLogin:" destination="-1" eventType="touchUpInside" id="oa0-2O-RzS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1DI-pi-j99">
+                    <rect key="frame" x="0.0" y="766" width="414" height="80"/>
+                    <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="NzQ-5I-CRD"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Criar Conta">
+                        <fontDescription key="titleFontDescription" type="system" pointSize="25"/>
+                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="ShowAddNewAccount:" destination="-1" eventType="touchUpInside" id="fH2-gD-dKY"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemTealColor"/>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="lC9-U4-Ev0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="2lm-tR-fWx"/>
+                <constraint firstItem="1DI-pi-j99" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="DXx-8n-BjO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="1DI-pi-j99" secondAttribute="bottom" constant="16" id="XwM-O3-gTD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lC9-U4-Ev0" secondAttribute="trailing" id="f42-AX-SfC"/>
+                <constraint firstItem="1DI-pi-j99" firstAttribute="top" secondItem="lC9-U4-Ev0" secondAttribute="bottom" id="i4h-y9-Mx0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1DI-pi-j99" secondAttribute="trailing" id="puz-Wg-Gc5"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="131"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
