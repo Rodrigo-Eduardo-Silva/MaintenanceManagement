@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33082BE22899FAE600CFD2D7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33082BE02899FAE600CFD2D7 /* MainViewController.swift */; };
+		33082BE32899FAE600CFD2D7 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33082BE12899FAE600CFD2D7 /* MainViewController.xib */; };
+		334C3A43289B411800931820 /* AddNewAccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C3A42289B411800931820 /* AddNewAccountModel.swift */; };
+		334C3A46289B428000931820 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C3A45289B428000931820 /* User.swift */; };
 		33F7F2C12898948100754BAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7F2C02898948100754BAE /* SceneDelegate.swift */; };
 		33F7F2C82898948200754BAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33F7F2C72898948200754BAE /* Assets.xcassets */; };
 		33F7F2CB2898948200754BAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33F7F2C92898948200754BAE /* LaunchScreen.storyboard */; };
@@ -24,6 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33082BE02899FAE600CFD2D7 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		33082BE12899FAE600CFD2D7 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		334C3A42289B411800931820 /* AddNewAccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewAccountModel.swift; sourceTree = "<group>"; };
+		334C3A45289B428000931820 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		33F7F2BB2898948100754BAE /* MaintenanceManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaintenanceManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33F7F2BE2898948100754BAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33F7F2C02898948100754BAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +61,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		334C3A44289B425300931820 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				334C3A45289B428000931820 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		33F7F2B22898948100754BAE = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +88,7 @@
 		33F7F2BD2898948100754BAE /* MaintenanceManagement */ = {
 			isa = PBXGroup;
 			children = (
+				334C3A44289B425300931820 /* Models */,
 				33F7F2D6289898CA00754BAE /* Scene */,
 				33F7F2BE2898948100754BAE /* AppDelegate.swift */,
 				33F7F2C02898948100754BAE /* SceneDelegate.swift */,
@@ -90,8 +107,11 @@
 				33F7F2D32898967D00754BAE /* LoginViewController.xib */,
 				33F7F2DB2898A71500754BAE /* HomeViewController.swift */,
 				33F7F2DC2898A71500754BAE /* HomeViewController.xib */,
+				33082BE02899FAE600CFD2D7 /* MainViewController.swift */,
+				33082BE12899FAE600CFD2D7 /* MainViewController.xib */,
 				33F7F2D72898A3FE00754BAE /* AddNewAccountViewController.swift */,
 				33F7F2D82898A3FE00754BAE /* AddNewAccountViewController.xib */,
+				334C3A42289B411800931820 /* AddNewAccountModel.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -167,6 +187,7 @@
 				33F7F2DE2898A71500754BAE /* HomeViewController.xib in Resources */,
 				33F7F2D52898967D00754BAE /* LoginViewController.xib in Resources */,
 				33F7F2DA2898A3FE00754BAE /* AddNewAccountViewController.xib in Resources */,
+				33082BE32899FAE600CFD2D7 /* MainViewController.xib in Resources */,
 				33F7F2E22898C18600754BAE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,6 +202,9 @@
 				33F7F2DD2898A71500754BAE /* HomeViewController.swift in Sources */,
 				33F7F2D42898967D00754BAE /* LoginViewController.swift in Sources */,
 				33F7F2D92898A3FE00754BAE /* AddNewAccountViewController.swift in Sources */,
+				334C3A43289B411800931820 /* AddNewAccountModel.swift in Sources */,
+				334C3A46289B428000931820 /* User.swift in Sources */,
+				33082BE22899FAE600CFD2D7 /* MainViewController.swift in Sources */,
 				33F7F2DF2898B63A00754BAE /* AppDelegate.swift in Sources */,
 				33F7F2C12898948100754BAE /* SceneDelegate.swift in Sources */,
 			);
