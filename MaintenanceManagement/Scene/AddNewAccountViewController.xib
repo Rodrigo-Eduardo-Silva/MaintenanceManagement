@@ -11,10 +11,9 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddNewAccountViewController" customModule="MaintenanceManagement" customModuleProvider="target">
             <connections>
                 <outlet property="IsMechanical" destination="CF9-tp-PYZ" id="0mm-lg-Ii5"/>
-                <outlet property="confirmText" destination="64v-p9-u45" id="6xT-Qq-c80"/>
-                <outlet property="name" destination="eSV-L1-f9t" id="3af-bM-9sW"/>
-                <outlet property="newEmailText" destination="dqm-ry-gbP" id="cIB-DB-9Mj"/>
-                <outlet property="passwordText" destination="fPv-a7-qrT" id="ijn-js-ZOV"/>
+                <outlet property="confirmTextField" destination="64v-p9-u45" id="2Ec-3r-VTL"/>
+                <outlet property="nameTextField" destination="eSV-L1-f9t" id="XEx-8Y-vx0"/>
+                <outlet property="newEmailTextField" destination="dqm-ry-gbP" id="c9M-B0-sAZ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

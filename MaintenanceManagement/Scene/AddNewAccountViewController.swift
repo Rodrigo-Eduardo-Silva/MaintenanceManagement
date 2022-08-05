@@ -3,10 +3,10 @@ import UIKit
 
 class AddNewAccountViewController: UIViewController {
 
-    @IBOutlet weak var newEmailText: UITextField!
-    @IBOutlet weak var passwordText: UITextField!
-    @IBOutlet weak var confirmText: UITextField!
-    @IBOutlet weak var name: UITextField!
+    @IBOutlet weak var newEmailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var confirmTextField: UITextField!
+    @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var IsMechanical: UISwitch!
     
     
@@ -15,15 +15,15 @@ class AddNewAccountViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        newEmailText.text = "teste@gmail"
-        name.text = "Rodrigo"
-        passwordText.text = "123456"
+        newEmailTextField.text = "teste@gmail"
+        nameTextField.text = "Rodrigo"
+        passwordTextField.text = "123456"
         model.delegate = self
         // Do any additional setup after loading the view.
     }
 
     @IBAction func CreateNewAccount(_ sender: Any) {
-        model.CreatAccount(user: User(name: name.text ?? "User teste", email: newEmailText.text ?? "User mail", isMechanical: IsMechanical.isOn, password: passwordText.text ?? "User Password"))
+        model.CreatAccount(user: User(name: nameTextField.text ?? "User teste", email: newEmailTextField.text ?? "User mail", isMechanical: IsMechanical.isOn, password: passwordTextField.text ?? "User Password"))
 
     }
     func showLoginError(message: String) {
@@ -32,11 +32,17 @@ class AddNewAccountViewController: UIViewController {
         alert.addAction(button)
         present(alert, animated: true)
     }
+    func showDidSucess(message: String) {
+        let alert = UIAlertController(title: "Maintence Management ", message: message, preferredStyle: .alert)
+        let button = UIAlertAction(title: "Ok", style: .default)
+        alert.addAction(button)
+        present(alert, animated: true)
+    }
 }
 
 extension AddNewAccountViewController: AddNewAccountModelDelegate {
     func AddNewAccountDidSuccess() {
-        showLoginError(message: "SUCESSO")
+        showDidSucess(message: "Usuário Criado com Sucesso")
     }
 
     func AddNewAccountDidFalil(messagem: String) {
