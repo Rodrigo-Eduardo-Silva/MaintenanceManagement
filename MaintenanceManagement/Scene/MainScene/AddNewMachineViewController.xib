@@ -10,6 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddNewMachineViewController" customModule="MaintenanceManagement" customModuleProvider="target">
             <connections>
+                <outlet property="descriptionTextField" destination="Yrl-XB-7zG" id="HS9-Pq-Z9J"/>
+                <outlet property="nameTextField" destination="eSm-LO-typ" id="6g2-wW-yRJ"/>
+                <outlet property="serialNumerTextField" destination="AsL-vV-b7f" id="AuW-7b-DQa"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -19,7 +22,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="CpY-r3-cxv">
-                    <rect key="frame" x="0.0" y="144" width="414" height="350"/>
+                    <rect key="frame" x="0.0" y="144" width="414" height="500"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome da Máquina" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBa-T7-9ZF">
                             <rect key="frame" x="16" y="0.0" width="382" height="20.5"/>
@@ -32,14 +35,25 @@
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrição" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hF-X3-hda">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Número de Série" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8Z-gN-c2P">
                             <rect key="frame" x="16" y="98.5" width="382" height="20.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AsL-vV-b7f">
+                            <rect key="frame" x="16" y="141" width="382" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descrição" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hF-X3-hda">
+                            <rect key="frame" x="16" y="197" width="382" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Yrl-XB-7zG">
-                            <rect key="frame" x="16" y="141" width="382" height="209"/>
+                            <rect key="frame" x="16" y="239.5" width="382" height="260.5"/>
                             <color key="backgroundColor" systemColor="systemGray5Color"/>
                             <color key="textColor" systemColor="labelColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -48,18 +62,22 @@
                     </subviews>
                     <constraints>
                         <constraint firstItem="eSm-LO-typ" firstAttribute="leading" secondItem="CpY-r3-cxv" secondAttribute="leading" constant="16" id="25V-rr-eg7"/>
+                        <constraint firstAttribute="trailing" secondItem="AsL-vV-b7f" secondAttribute="trailing" constant="16" id="4cv-sG-hhC"/>
+                        <constraint firstItem="k8Z-gN-c2P" firstAttribute="leading" secondItem="CpY-r3-cxv" secondAttribute="leading" constant="16" id="68L-Cz-Y70"/>
                         <constraint firstAttribute="trailing" secondItem="eSm-LO-typ" secondAttribute="trailing" constant="16" id="6Zo-gV-NEI"/>
+                        <constraint firstAttribute="trailing" secondItem="k8Z-gN-c2P" secondAttribute="trailing" constant="16" id="CZQ-Ez-xzc"/>
                         <constraint firstItem="2hF-X3-hda" firstAttribute="leading" secondItem="CpY-r3-cxv" secondAttribute="leading" constant="16" id="SRH-lq-7Hy"/>
                         <constraint firstAttribute="trailing" secondItem="uBa-T7-9ZF" secondAttribute="trailing" constant="16" id="Ugv-AE-1ye"/>
                         <constraint firstItem="Yrl-XB-7zG" firstAttribute="leading" secondItem="CpY-r3-cxv" secondAttribute="leading" constant="16" id="eM3-Xj-ccC"/>
                         <constraint firstAttribute="trailing" secondItem="Yrl-XB-7zG" secondAttribute="trailing" constant="16" id="hZQ-Y4-qJC"/>
                         <constraint firstAttribute="trailing" secondItem="2hF-X3-hda" secondAttribute="trailing" constant="16" id="n40-5j-HqC"/>
+                        <constraint firstItem="AsL-vV-b7f" firstAttribute="leading" secondItem="CpY-r3-cxv" secondAttribute="leading" constant="16" id="nnR-UK-MtX"/>
                         <constraint firstItem="uBa-T7-9ZF" firstAttribute="leading" secondItem="CpY-r3-cxv" secondAttribute="leading" constant="16" id="rB8-Pb-wD8"/>
-                        <constraint firstAttribute="height" constant="350" id="xfh-EF-tBC"/>
+                        <constraint firstAttribute="height" constant="500" id="xfh-EF-tBC"/>
                     </constraints>
                 </stackView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDx-DC-GQf">
-                    <rect key="frame" x="132" y="514" width="150" height="50"/>
+                    <rect key="frame" x="132" y="664" width="150" height="50"/>
                     <color key="backgroundColor" systemColor="systemTealColor"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="150" id="5dU-Le-Djs"/>
@@ -70,6 +88,9 @@
                     <buttonConfiguration key="configuration" style="plain" title="Cadastrar">
                         <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="SaveMachine:" destination="-1" eventType="touchUpInside" id="AUE-0z-IeB"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

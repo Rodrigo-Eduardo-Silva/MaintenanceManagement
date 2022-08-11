@@ -7,10 +7,7 @@ protocol AddNewAccountModelDelegate: AnyObject {
     func AddNewAccountDidFalil(messagem: String)
 }
 class AddNewAccountModel {
-     
-
     weak var delegate: AddNewAccountModelDelegate?
- 
     func CreatAccount(user: User?) {
         if let  name = user?.name , let email = user?.email, let password = user?.password , let IsMechanical = user?.isMechanical {
             let authentication = Auth.auth()
@@ -26,7 +23,7 @@ class AddNewAccountModel {
                         }
                     }
                     let user = database.child(typeUser)
-                    let userData = ["Name:": name , "email": email]
+                    let userData = ["Name": name , "email": email]
                     guard let AuthData = AuthData else {
                         fatalError()
                     }
@@ -35,13 +32,7 @@ class AddNewAccountModel {
                 } else {
                     self.delegate?.AddNewAccountDidFalil(messagem: error?.localizedDescription ?? "Falha ao Criar Usuário")
                 }
-                
-                
             }
         }
-        
     }
-    
-     
-    
 }

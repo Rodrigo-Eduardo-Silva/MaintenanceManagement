@@ -18,6 +18,7 @@ class AddNewAccountViewController: UIViewController {
         newEmailTextField.text = "teste@gmail"
         nameTextField.text = "Rodrigo"
         passwordTextField.text = "123456"
+        confirmTextField.text = "123456"
         model.delegate = self
         // Do any additional setup after loading the view.
     }

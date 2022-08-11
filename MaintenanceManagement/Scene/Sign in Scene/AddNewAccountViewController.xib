@@ -14,6 +14,7 @@
                 <outlet property="confirmTextField" destination="64v-p9-u45" id="2Ec-3r-VTL"/>
                 <outlet property="nameTextField" destination="eSV-L1-f9t" id="XEx-8Y-vx0"/>
                 <outlet property="newEmailTextField" destination="dqm-ry-gbP" id="c9M-B0-sAZ"/>
+                <outlet property="passwordTextField" destination="fPv-a7-qrT" id="ZNF-A7-9Nn"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

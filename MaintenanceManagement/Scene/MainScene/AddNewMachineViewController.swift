@@ -1,22 +1,27 @@
 import UIKit
+import FirebaseAuth
+import FirebaseDatabase
 
 class AddNewMachineViewController: UIViewController {
-
+    
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var serialNumerTextField: UITextField!
+    @IBOutlet weak var descriptionTextField: UITextView!
+    var model =  AddNewMachineModel()
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        nameTextField.text = "Diejet"
+        serialNumerTextField.text = "12345a"
+        descriptionTextField.text = "Impresso jato de tinta"
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func SaveMachine(_ sender: Any) {
+        
+        model.AddMachine(machine: Machine(name: nameTextField.text ?? "teste", id: serialNumerTextField.text ?? "1234test", description: descriptionTextField.text ?? "descripton text"))
+        print("maquina cadastrada")
     }
-    */
-
+ 
 }
+ 
+
+    
