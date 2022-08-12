@@ -3,7 +3,6 @@ import FirebaseDatabase
 import Firebase
 import FirebaseAuth
 class AddNewMachineModel {
-    var machine: Machine!
     
     func AddMachine(machine:Machine?) {
         if let name = machine?.name, let description = machine?.description, let idMachine = machine?.id {
@@ -19,7 +18,7 @@ class AddNewMachineModel {
                          "machineName" : "\(name)",
                          "description" : "\(description)",
                          "SerialNumber" : "\(idMachine)",
-                         "Registration" : data?["Name"] as! String
+                         "Registration" : data?["Name"] as? String
                          ]
                      machineRegistration.childByAutoId().setValue(machine)
                 }

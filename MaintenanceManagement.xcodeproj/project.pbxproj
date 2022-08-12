@@ -20,6 +20,11 @@
 		333C6E4B28A3530D000647D2 /* AddNewMachineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333C6E4A28A3530D000647D2 /* AddNewMachineModel.swift */; };
 		334C3A43289B411800931820 /* AddNewAccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C3A42289B411800931820 /* AddNewAccountModel.swift */; };
 		334C3A46289B428000931820 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334C3A45289B428000931820 /* User.swift */; };
+		3384DAAE28A5DC4400D495AC /* OpenOrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3384DAAC28A5DC4400D495AC /* OpenOrderTableViewCell.swift */; };
+		3384DAAF28A5DC4400D495AC /* OpenOrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3384DAAD28A5DC4400D495AC /* OpenOrderTableViewCell.xib */; };
+		3384DAB228A5E71A00D495AC /* SaveOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3384DAB028A5E71A00D495AC /* SaveOrderViewController.swift */; };
+		3384DAB328A5E71A00D495AC /* SaveOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3384DAB128A5E71A00D495AC /* SaveOrderViewController.xib */; };
+		3384DAB728A5EC3900D495AC /* SaveOrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3384DAB628A5EC3900D495AC /* SaveOrderModel.swift */; };
 		33F7F2C12898948100754BAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7F2C02898948100754BAE /* SceneDelegate.swift */; };
 		33F7F2C82898948200754BAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33F7F2C72898948200754BAE /* Assets.xcassets */; };
 		33F7F2CB2898948200754BAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33F7F2C92898948200754BAE /* LaunchScreen.storyboard */; };
@@ -50,6 +55,11 @@
 		333C6E4A28A3530D000647D2 /* AddNewMachineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewMachineModel.swift; sourceTree = "<group>"; };
 		334C3A42289B411800931820 /* AddNewAccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewAccountModel.swift; sourceTree = "<group>"; };
 		334C3A45289B428000931820 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3384DAAC28A5DC4400D495AC /* OpenOrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenOrderTableViewCell.swift; sourceTree = "<group>"; };
+		3384DAAD28A5DC4400D495AC /* OpenOrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpenOrderTableViewCell.xib; sourceTree = "<group>"; };
+		3384DAB028A5E71A00D495AC /* SaveOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveOrderViewController.swift; sourceTree = "<group>"; };
+		3384DAB128A5E71A00D495AC /* SaveOrderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SaveOrderViewController.xib; sourceTree = "<group>"; };
+		3384DAB628A5EC3900D495AC /* SaveOrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveOrderModel.swift; sourceTree = "<group>"; };
 		33F7F2BB2898948100754BAE /* MaintenanceManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaintenanceManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33F7F2BE2898948100754BAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33F7F2C02898948100754BAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,8 +97,13 @@
 				333ABE14289CB06F0098ADB3 /* AddNewMachineViewController.xib */,
 				333C6E4328A34AF3000647D2 /* OrderListViewController.swift */,
 				333C6E4428A34AF3000647D2 /* OrderListViewController.xib */,
-				333C6E3B28A34A3C000647D2 /* OpenOrdeViewController.swift */,
+				3384DAB028A5E71A00D495AC /* SaveOrderViewController.swift */,
 				333C6E3C28A34A3C000647D2 /* OpenOrdeViewController.xib */,
+				3384DAB628A5EC3900D495AC /* SaveOrderModel.swift */,
+				3384DAAC28A5DC4400D495AC /* OpenOrderTableViewCell.swift */,
+				3384DAAD28A5DC4400D495AC /* OpenOrderTableViewCell.xib */,
+				333C6E3B28A34A3C000647D2 /* OpenOrdeViewController.swift */,
+				3384DAB128A5E71A00D495AC /* SaveOrderViewController.xib */,
 				33082BE02899FAE600CFD2D7 /* MainViewController.swift */,
 				33082BE12899FAE600CFD2D7 /* MainViewController.xib */,
 			);
@@ -231,8 +246,10 @@
 				333C6E4628A34AF4000647D2 /* OrderListViewController.xib in Resources */,
 				33F7F2DE2898A71500754BAE /* HomeViewController.xib in Resources */,
 				33F7F2D52898967D00754BAE /* LoginViewController.xib in Resources */,
+				3384DAB328A5E71A00D495AC /* SaveOrderViewController.xib in Resources */,
 				33F7F2DA2898A3FE00754BAE /* AddNewAccountViewController.xib in Resources */,
 				33082BE32899FAE600CFD2D7 /* MainViewController.xib in Resources */,
+				3384DAAF28A5DC4400D495AC /* OpenOrderTableViewCell.xib in Resources */,
 				33F7F2E22898C18600754BAE /* GoogleService-Info.plist in Resources */,
 				333ABE16289CB06F0098ADB3 /* AddNewMachineViewController.xib in Resources */,
 			);
@@ -247,6 +264,8 @@
 			files = (
 				33F7F2DD2898A71500754BAE /* HomeViewController.swift in Sources */,
 				33F7F2D42898967D00754BAE /* LoginViewController.swift in Sources */,
+				3384DAB728A5EC3900D495AC /* SaveOrderModel.swift in Sources */,
+				3384DAB228A5E71A00D495AC /* SaveOrderViewController.swift in Sources */,
 				333C6E4528A34AF4000647D2 /* OrderListViewController.swift in Sources */,
 				33F7F2D92898A3FE00754BAE /* AddNewAccountViewController.swift in Sources */,
 				334C3A43289B411800931820 /* AddNewAccountModel.swift in Sources */,
@@ -255,6 +274,7 @@
 				333C6E3D28A34A3C000647D2 /* OpenOrdeViewController.swift in Sources */,
 				33F7F2DF2898B63A00754BAE /* AppDelegate.swift in Sources */,
 				333ABE15289CB06F0098ADB3 /* AddNewMachineViewController.swift in Sources */,
+				3384DAAE28A5DC4400D495AC /* OpenOrderTableViewCell.swift in Sources */,
 				333C6E4B28A3530D000647D2 /* AddNewMachineModel.swift in Sources */,
 				33F7F2C12898948100754BAE /* SceneDelegate.swift in Sources */,
 				333ABE10289CA7D70098ADB3 /* OrderMaintenance.swift in Sources */,
