@@ -17,7 +17,7 @@ class AddNewMachineViewController: UIViewController {
 
     @IBAction func SaveMachine(_ sender: Any) {
         
-        model.AddMachine(machine: Machine(name: nameTextField.text ?? "teste", id: serialNumerTextField.text ?? "1234test", description: descriptionTextField.text ?? "descripton text",key: ""))
+        model.AddMachine(machine: Machine(name: nameTextField.text ?? "teste", id: serialNumerTextField.text ?? "1234test", description: descriptionTextField.text ?? "descripton text",identifier: ""))
         print("maquina cadastrada")
     }
  

@@ -55,54 +55,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "7BA44DE7-E905-41DD-945C-50444525DDAE"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MaintenanceManagement/Scene/MainScene/AddNewMachineModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "AddMachine(machine:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "54454D51-9554-4DA8-B1E9-7C25FB198C3E"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MaintenanceManagement/Scene/MainScene/AddNewMachineModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "AddMachine(machine:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "E3258747-7162-43B6-BD51-E100FFE52558"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MaintenanceManagement/Scene/MainScene/AddNewMachineModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
-            landmarkName = "AddMachine(machine:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "A7455501-E5F9-4682-B4E4-E6E0B598E131"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -114,6 +66,238 @@
             endingLineNumber = "20"
             landmarkName = "SaveMachine(_:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "771F290B-3BF9-4563-8B8B-A6CFA112DD98"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MaintenanceManagement/Scene/MainScene/SaveOrderViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "6"
+            endingLineNumber = "6"
+            landmarkName = "SaveOrderViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "771F290B-3BF9-4563-8B8B-A6CFA112DD98 - 9a33da518b9cc771"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MaintenanceManagement.SaveOrderViewController.chooseDatePicker.getter : Swift.Optional&lt;__C.UIDatePicker&gt;"
+                  moduleName = "MaintenanceManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rodrigoeduardosilva/Swift_Dev/MaintenanceManagement/MaintenanceManagement/Scene/MainScene/SaveOrderViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "771F290B-3BF9-4563-8B8B-A6CFA112DD98 - fac0fd3530451b65"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MaintenanceManagement.SaveOrderViewController.chooseDatePicker.setter : Swift.Optional&lt;__C.UIDatePicker&gt;"
+                  moduleName = "MaintenanceManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rodrigoeduardosilva/Swift_Dev/MaintenanceManagement/MaintenanceManagement/Scene/MainScene/SaveOrderViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "771F290B-3BF9-4563-8B8B-A6CFA112DD98 - 195cc37bfa870335"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MaintenanceManagement.SaveOrderViewController.chooseDatePicker.modify : Swift.Optional&lt;__C.UIDatePicker&gt;"
+                  moduleName = "MaintenanceManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rodrigoeduardosilva/Swift_Dev/MaintenanceManagement/MaintenanceManagement/Scene/MainScene/SaveOrderViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "771F290B-3BF9-4563-8B8B-A6CFA112DD98 - a190208ed6529e73"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MaintenanceManagement.SaveOrderViewController.chooseDatePicker.modify : Swift.Optional&lt;__C.UIDatePicker&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "MaintenanceManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rodrigoeduardosilva/Swift_Dev/MaintenanceManagement/MaintenanceManagement/Scene/MainScene/SaveOrderViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "771F290B-3BF9-4563-8B8B-A6CFA112DD98 - 958c0ce9becc579e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MaintenanceManagement.SaveOrderViewController.init(machine: MaintenanceManagement.Machine) -&gt; MaintenanceManagement.SaveOrderViewController"
+                  moduleName = "MaintenanceManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rodrigoeduardosilva/Swift_Dev/MaintenanceManagement/MaintenanceManagement/Scene/MainScene/SaveOrderViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "264">
+               </Location>
+               <Location
+                  uuid = "771F290B-3BF9-4563-8B8B-A6CFA112DD98 - bf0ce8299b858f2c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MaintenanceManagement.SaveOrderViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;MaintenanceManagement.SaveOrderViewController&gt;"
+                  moduleName = "MaintenanceManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rodrigoeduardosilva/Swift_Dev/MaintenanceManagement/MaintenanceManagement/Scene/MainScene/SaveOrderViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "6"
+                  endingLineNumber = "6"
+                  offsetFromSymbolStart = "148">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "13A6A72C-EE86-452E-9FE9-F031E5327DDF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MaintenanceManagement/Scene/MainScene/OpenOrdeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "tableView(_:didSelectRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A1A26150-4336-489C-BC71-0AF81F36002C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MaintenanceManagement/Scene/MainScene/SaveOrderViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "7"
+            endingLineNumber = "7"
+            landmarkName = "SaveOrderViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "A1A26150-4336-489C-BC71-0AF81F36002C - c5d2360a941559c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MaintenanceManagement.SaveOrderViewController.errorDescriptionLabel.getter : Swift.Optional&lt;__C.UITextView&gt;"
+                  moduleName = "MaintenanceManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rodrigoeduardosilva/Swift_Dev/MaintenanceManagement/MaintenanceManagement/Scene/MainScene/SaveOrderViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "7"
+                  endingLineNumber = "7"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "A1A26150-4336-489C-BC71-0AF81F36002C - 6421c8e470d7ba35"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MaintenanceManagement.SaveOrderViewController.errorDescriptionLabel.setter : Swift.Optional&lt;__C.UITextView&gt;"
+                  moduleName = "MaintenanceManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rodrigoeduardosilva/Swift_Dev/MaintenanceManagement/MaintenanceManagement/Scene/MainScene/SaveOrderViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "7"
+                  endingLineNumber = "7"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "A1A26150-4336-489C-BC71-0AF81F36002C - b51ba57bc6b6a914"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MaintenanceManagement.SaveOrderViewController.errorDescriptionLabel.modify : Swift.Optional&lt;__C.UITextView&gt;"
+                  moduleName = "MaintenanceManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rodrigoeduardosilva/Swift_Dev/MaintenanceManagement/MaintenanceManagement/Scene/MainScene/SaveOrderViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "A1A26150-4336-489C-BC71-0AF81F36002C - cc5e26ad6d5d6406"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MaintenanceManagement.SaveOrderViewController.errorDescriptionLabel.modify : Swift.Optional&lt;__C.UITextView&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "MaintenanceManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rodrigoeduardosilva/Swift_Dev/MaintenanceManagement/MaintenanceManagement/Scene/MainScene/SaveOrderViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "7"
+                  endingLineNumber = "7"
+                  offsetFromSymbolStart = "28">
+               </Location>
+               <Location
+                  uuid = "A1A26150-4336-489C-BC71-0AF81F36002C - 958c0ce9becc57ff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MaintenanceManagement.SaveOrderViewController.init(machine: MaintenanceManagement.Machine) -&gt; MaintenanceManagement.SaveOrderViewController"
+                  moduleName = "MaintenanceManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rodrigoeduardosilva/Swift_Dev/MaintenanceManagement/MaintenanceManagement/Scene/MainScene/SaveOrderViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "7"
+                  endingLineNumber = "7"
+                  offsetFromSymbolStart = "300">
+               </Location>
+               <Location
+                  uuid = "A1A26150-4336-489C-BC71-0AF81F36002C - bf0ce8299b858f4d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MaintenanceManagement.SaveOrderViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;MaintenanceManagement.SaveOrderViewController&gt;"
+                  moduleName = "MaintenanceManagement"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rodrigoeduardosilva/Swift_Dev/MaintenanceManagement/MaintenanceManagement/Scene/MainScene/SaveOrderViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "7"
+                  endingLineNumber = "7"
+                  offsetFromSymbolStart = "184">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

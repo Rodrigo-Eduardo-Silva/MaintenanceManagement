@@ -18,25 +18,32 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="lista de ordens abertas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r66-l6-9cL">
-                    <rect key="frame" x="120" y="352" width="174" height="21"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lista de ordens abertas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r66-l6-9cL">
+                    <rect key="frame" x="16" y="54" width="382" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="list.dash" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="e2y-Od-HkX">
-                    <rect key="frame" x="101" y="114" width="240" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xFR-lZ-9ah">
+                    <rect key="frame" x="0.0" y="96" width="414" height="711"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="132" y="128"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="xFR-lZ-9ah" secondAttribute="trailing" id="2Wq-Jw-uqu"/>
+                <constraint firstItem="r66-l6-9cL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="Asw-ja-2fg"/>
+                <constraint firstItem="xFR-lZ-9ah" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="EQU-sm-ghx"/>
+                <constraint firstItem="r66-l6-9cL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="QXH-cP-g7e"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="xFR-lZ-9ah" secondAttribute="bottom" constant="55" id="Tdc-xp-TJx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="r66-l6-9cL" secondAttribute="trailing" constant="16" id="Txf-bz-NRW"/>
+                <constraint firstItem="xFR-lZ-9ah" firstAttribute="top" secondItem="r66-l6-9cL" secondAttribute="bottom" constant="21" id="bnj-Sk-eX1"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="127.90178571428571"/>
         </view>
     </objects>
     <resources>
-        <image name="list.dash" catalog="system" width="128" height="85"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
