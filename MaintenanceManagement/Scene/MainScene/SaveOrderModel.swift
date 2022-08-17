@@ -11,16 +11,16 @@ class SaveOrderModel {
             let descriptionError = order?.descriptionError,
             let machineKey = order?.machine.identifier
         {
-            let datadase = Database.database().reference()
-            let machine = datadase.child("Machines")
-            let orderRegistration = machine.child(machineKey).child("Orders")
+            let database = Database.database().reference()
+            let orderRegistration = database.child("Orders")
             orderRegistration.observeSingleEvent(of: .value) { dataSnapShot in
                     let orderData = [
                     "date" : "\(date.formatted())",
-                    "orderNumber" : "\(dataSnapShot.key)",
                     "descriptionError" : "\(descriptionError)",
+                    "machineIdentifier" : "\(machineKey)",
                     "user" : "\(user)",
-                    "IdUser": "\(IdUser) ",
+                    "IdUser": "\(IdUser)",
+                    "State" : order?.state as Any
                     ]
                 orderRegistration.childByAutoId().setValue(orderData)
             }
