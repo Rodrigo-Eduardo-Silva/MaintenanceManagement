@@ -12,7 +12,7 @@ class AddNewMachineViewController: UIViewController {
         super.viewDidLoad()
         nameTextField.text = "Diejet"
         serialNumerTextField.text = "12345a"
-        descriptionTextField.text = "Impresso jato de tinta"
+        descriptionTextField.text = "Impressora jato de tinta"
     }
 
     @IBAction func SaveMachine(_ sender: Any) {
