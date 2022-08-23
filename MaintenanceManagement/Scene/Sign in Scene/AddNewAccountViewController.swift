@@ -1,6 +1,4 @@
-
 import UIKit
-
 class AddNewAccountViewController: UIViewController {
 
     @IBOutlet weak var newEmailTextField: UITextField!
@@ -8,11 +6,7 @@ class AddNewAccountViewController: UIViewController {
     @IBOutlet weak var confirmTextField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var IsMechanical: UISwitch!
-    
-    
     var model =  AddNewAccountModel()
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         newEmailTextField.text = "teste@gmail"
@@ -20,7 +14,6 @@ class AddNewAccountViewController: UIViewController {
         passwordTextField.text = "123456"
         confirmTextField.text = "123456"
         model.delegate = self
-        // Do any additional setup after loading the view.
     }
 
     @IBAction func CreateNewAccount(_ sender: Any) {
@@ -40,7 +33,6 @@ class AddNewAccountViewController: UIViewController {
         present(alert, animated: true)
     }
 }
-
 extension AddNewAccountViewController: AddNewAccountModelDelegate {
     func AddNewAccountDidSuccess() {
         showDidSucess(message: "Usuário Criado com Sucesso")

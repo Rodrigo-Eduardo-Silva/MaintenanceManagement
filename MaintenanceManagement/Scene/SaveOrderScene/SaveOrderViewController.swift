@@ -22,11 +22,12 @@ class SaveOrderViewController: UIViewController {
         
         chooseDatePicker.minimumDate = Date()
         machineLabel.text  = machine.name
+        model.authUser()
         
     }
     
     @IBAction func sendOrder(_ sender: Any) {
-        model.SaveOrder(order: OrderMaintenance(user: model.authUser().0, IdUser: model.authUser().1, date: chooseDatePicker.date, descriptionError: errorDescriptionLabel.text, state: true, machineidentifier: machine.identifier, machineName: machine.name))
+        model.SaveOrder(order: OrderMaintenance(user: model.user ?? "teste", IdUser: model.IdUser ?? "123teste", date: chooseDatePicker.date, descriptionError: errorDescriptionLabel.text, state: true, machineidentifier: machine.identifier, machineName: machine.name))
         dismiss(animated: true, completion: nil)
     }
     

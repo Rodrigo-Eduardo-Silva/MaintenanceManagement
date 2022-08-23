@@ -4,26 +4,17 @@ import FirebaseAuth
 
 class OpenOrdeViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
-    var machines: [Machine] = []
+    var model = OpenOrderModel()
+    var machines: [Machine] {
+        model.machines
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(OpenOrderTableViewCell.nib, forCellReuseIdentifier: OpenOrderTableViewCell.cell)
-        updateMachine()
-    }
-    func updateMachine() {
-        let database = Database.database().reference()
-        let machineData = database.child("Machines")
-        machineData.observe(.childAdded) { dataSnapshot in
-            let data = dataSnapshot.value as? NSDictionary
-            let machine = Machine(name: data?["machineName"] as? String ?? "teste",
-                                  id: data?["SerialNumber"] as? String  ?? "teste",
-                                  description: data?["description"] as? String ?? "teste",
-                                  identifier: dataSnapshot.key)
-            self.machines.append(machine)
-            self.tableView.reloadData()
-        }
+        model.delegate = self
+        model.updateMachine()
     }
     func showOpenOrder(machine: Machine){
         let machine = machines[tableView.indexPathForSelectedRow!.row]
@@ -49,5 +40,12 @@ extension OpenOrdeViewController: UITableViewDelegate {
         let machine = machines[indexPath.row]
         showOpenOrder(machine: machine)
     }
-    
+}
+extension OpenOrdeViewController: OpenOrderModelDelegate {
+    func updateOpenOrderModel() {
+        DispatchQueue.main.async { [weak self] in
+            self?.tableView.reloadData()
+        }
+    }
+
 }

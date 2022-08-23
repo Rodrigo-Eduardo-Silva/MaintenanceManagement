@@ -29,6 +29,8 @@
 		3384DAB228A5E71A00D495AC /* SaveOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3384DAB028A5E71A00D495AC /* SaveOrderViewController.swift */; };
 		3384DAB328A5E71A00D495AC /* SaveOrderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3384DAB128A5E71A00D495AC /* SaveOrderViewController.xib */; };
 		3384DAB728A5EC3900D495AC /* SaveOrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3384DAB628A5EC3900D495AC /* SaveOrderModel.swift */; };
+		33AD69F928B450EA00898BC9 /* OpenOrderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AD69F828B450E900898BC9 /* OpenOrderModel.swift */; };
+		33AD6A0028B4731300898BC9 /* OrderListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AD69FF28B4731300898BC9 /* OrderListModel.swift */; };
 		33C564C428AC6C1300F71BA1 /* OrderListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C564C228AC6C1300F71BA1 /* OrderListTableViewCell.swift */; };
 		33C564C528AC6C1300F71BA1 /* OrderListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33C564C328AC6C1300F71BA1 /* OrderListTableViewCell.xib */; };
 		33F7F2C12898948100754BAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33F7F2C02898948100754BAE /* SceneDelegate.swift */; };
@@ -70,6 +72,8 @@
 		3384DAB028A5E71A00D495AC /* SaveOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveOrderViewController.swift; sourceTree = "<group>"; };
 		3384DAB128A5E71A00D495AC /* SaveOrderViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SaveOrderViewController.xib; sourceTree = "<group>"; };
 		3384DAB628A5EC3900D495AC /* SaveOrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveOrderModel.swift; sourceTree = "<group>"; };
+		33AD69F828B450E900898BC9 /* OpenOrderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenOrderModel.swift; sourceTree = "<group>"; };
+		33AD69FF28B4731300898BC9 /* OrderListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListModel.swift; sourceTree = "<group>"; };
 		33C564C228AC6C1300F71BA1 /* OrderListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListTableViewCell.swift; sourceTree = "<group>"; };
 		33C564C328AC6C1300F71BA1 /* OrderListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderListTableViewCell.xib; sourceTree = "<group>"; };
 		33F7F2BB2898948100754BAE /* MaintenanceManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaintenanceManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,25 +108,9 @@
 		333C6E4728A34B1B000647D2 /* MainScene */ = {
 			isa = PBXGroup;
 			children = (
-				333ABE13289CB06F0098ADB3 /* AddNewMachineViewController.swift */,
-				333C6E4A28A3530D000647D2 /* AddNewMachineModel.swift */,
-				333ABE14289CB06F0098ADB3 /* AddNewMachineViewController.xib */,
-				333C6E4328A34AF3000647D2 /* OrderListViewController.swift */,
-				333C6E4428A34AF3000647D2 /* OrderListViewController.xib */,
-				33C564C228AC6C1300F71BA1 /* OrderListTableViewCell.swift */,
-				33C564C328AC6C1300F71BA1 /* OrderListTableViewCell.xib */,
-				3384DAB028A5E71A00D495AC /* SaveOrderViewController.swift */,
-				333C6E3C28A34A3C000647D2 /* OpenOrdeViewController.xib */,
-				3384DAB628A5EC3900D495AC /* SaveOrderModel.swift */,
-				3384DAAC28A5DC4400D495AC /* OpenOrderTableViewCell.swift */,
-				3384DAAD28A5DC4400D495AC /* OpenOrderTableViewCell.xib */,
-				333C6E3B28A34A3C000647D2 /* OpenOrdeViewController.swift */,
-				3384DAB128A5E71A00D495AC /* SaveOrderViewController.xib */,
 				33082BE02899FAE600CFD2D7 /* MainViewController.swift */,
-				336A2F0028B2B8A500E761F1 /* MainViewModel.swift */,
-				336A2F0228B2CA7A00E761F1 /* CloseOrderViewController.swift */,
-				336A2F0328B2CA7A00E761F1 /* CloseOrderViewController.xib */,
 				33082BE12899FAE600CFD2D7 /* MainViewController.xib */,
+				336A2F0028B2B8A500E761F1 /* MainViewModel.swift */,
 			);
 			path = MainScene;
 			sourceTree = "<group>";
@@ -150,6 +138,59 @@
 				333ABE0F289CA7D70098ADB3 /* OrderMaintenance.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		33AD69FA28B45EEF00898BC9 /* AddNewMachineScene */ = {
+			isa = PBXGroup;
+			children = (
+				333ABE13289CB06F0098ADB3 /* AddNewMachineViewController.swift */,
+				333C6E4A28A3530D000647D2 /* AddNewMachineModel.swift */,
+				333ABE14289CB06F0098ADB3 /* AddNewMachineViewController.xib */,
+			);
+			path = AddNewMachineScene;
+			sourceTree = "<group>";
+		};
+		33AD69FB28B45F3800898BC9 /* OrderListScene */ = {
+			isa = PBXGroup;
+			children = (
+				333C6E4328A34AF3000647D2 /* OrderListViewController.swift */,
+				33AD69FF28B4731300898BC9 /* OrderListModel.swift */,
+				333C6E4428A34AF3000647D2 /* OrderListViewController.xib */,
+				33C564C228AC6C1300F71BA1 /* OrderListTableViewCell.swift */,
+				33C564C328AC6C1300F71BA1 /* OrderListTableViewCell.xib */,
+			);
+			path = OrderListScene;
+			sourceTree = "<group>";
+		};
+		33AD69FC28B45FB100898BC9 /* SaveOrderScene */ = {
+			isa = PBXGroup;
+			children = (
+				3384DAB128A5E71A00D495AC /* SaveOrderViewController.xib */,
+				3384DAB628A5EC3900D495AC /* SaveOrderModel.swift */,
+				3384DAB028A5E71A00D495AC /* SaveOrderViewController.swift */,
+			);
+			path = SaveOrderScene;
+			sourceTree = "<group>";
+		};
+		33AD69FD28B4601800898BC9 /* OpenOrderScene */ = {
+			isa = PBXGroup;
+			children = (
+				333C6E3C28A34A3C000647D2 /* OpenOrdeViewController.xib */,
+				3384DAAC28A5DC4400D495AC /* OpenOrderTableViewCell.swift */,
+				3384DAAD28A5DC4400D495AC /* OpenOrderTableViewCell.xib */,
+				333C6E3B28A34A3C000647D2 /* OpenOrdeViewController.swift */,
+				33AD69F828B450E900898BC9 /* OpenOrderModel.swift */,
+			);
+			path = OpenOrderScene;
+			sourceTree = "<group>";
+		};
+		33AD69FE28B463F700898BC9 /* CloserOrderScene */ = {
+			isa = PBXGroup;
+			children = (
+				336A2F0228B2CA7A00E761F1 /* CloseOrderViewController.swift */,
+				336A2F0328B2CA7A00E761F1 /* CloseOrderViewController.xib */,
+			);
+			path = CloserOrderScene;
 			sourceTree = "<group>";
 		};
 		33F7F2B22898948100754BAE = {
@@ -186,6 +227,11 @@
 		33F7F2D6289898CA00754BAE /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				33AD69FE28B463F700898BC9 /* CloserOrderScene */,
+				33AD69FA28B45EEF00898BC9 /* AddNewMachineScene */,
+				33AD69FB28B45F3800898BC9 /* OrderListScene */,
+				33AD69FC28B45FB100898BC9 /* SaveOrderScene */,
+				33AD69FD28B4601800898BC9 /* OpenOrderScene */,
 				333C6E4928A34B8F000647D2 /* Sign in Scene */,
 				333C6E4728A34B1B000647D2 /* MainScene */,
 			);
@@ -294,12 +340,14 @@
 				33082BE22899FAE600CFD2D7 /* MainViewController.swift in Sources */,
 				333C6E3D28A34A3C000647D2 /* OpenOrdeViewController.swift in Sources */,
 				33F7F2DF2898B63A00754BAE /* AppDelegate.swift in Sources */,
+				33AD69F928B450EA00898BC9 /* OpenOrderModel.swift in Sources */,
 				333ABE15289CB06F0098ADB3 /* AddNewMachineViewController.swift in Sources */,
 				33C564C428AC6C1300F71BA1 /* OrderListTableViewCell.swift in Sources */,
 				3384DAAE28A5DC4400D495AC /* OpenOrderTableViewCell.swift in Sources */,
 				333C6E4B28A3530D000647D2 /* AddNewMachineModel.swift in Sources */,
 				336A2F0128B2B8A500E761F1 /* MainViewModel.swift in Sources */,
 				33F7F2C12898948100754BAE /* SceneDelegate.swift in Sources */,
+				33AD6A0028B4731300898BC9 /* OrderListModel.swift in Sources */,
 				333ABE10289CA7D70098ADB3 /* OrderMaintenance.swift in Sources */,
 				336A2EFF28B2AC6300E761F1 /* LoginViewModel.swift in Sources */,
 				333ABE0C289CA55B0098ADB3 /* Machine.swift in Sources */,
