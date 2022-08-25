@@ -5,7 +5,7 @@ struct User {
     var email: String
     var password: String
     var isMechanical: Bool = false
-    init(name: String, email: String ,isMechanical: Bool, password: String) {
+    init(name: String, email: String, isMechanical: Bool, password: String) {
         self.name = name
         self.email = email
         self.isMechanical = isMechanical

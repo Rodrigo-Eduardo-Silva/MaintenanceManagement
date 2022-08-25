@@ -3,34 +3,37 @@ import Firebase
 import FirebaseDatabase
 
 protocol AddNewAccountModelDelegate: AnyObject {
-    func AddNewAccountDidSuccess()
-    func AddNewAccountDidFalil(messagem: String)
+    func addNewAccountDidSuccess()
+    func addNewAccountDidFalil(messagem: String)
 }
 class AddNewAccountModel {
     weak var delegate: AddNewAccountModelDelegate?
-    func CreatAccount(user: User?) {
-        if let  name = user?.name , let email = user?.email, let password = user?.password , let IsMechanical = user?.isMechanical {
+    func createAccount(user: User?) {
+        if let  name = user?.name, let email = user?.email, let password = user?.password, let isMechanical = user?.isMechanical {
             let authentication = Auth.auth()
-            authentication.createUser(withEmail: email, password: password) { AuthData, error in
+            authentication.createUser(withEmail: email, password: password) { authData, error in
                 if error == nil {
                     let database = Database.database().reference()
                     var typeUser: String {
-                        switch IsMechanical {
+                        switch isMechanical {
                         case true:
                             return "Mechanical"
                         case false:
-                            return "Users"
+                            return "User"
                         }
                     }
-                    let user = database.child(typeUser)
-                    let userData = ["Name": name , "email": email]
-                    guard let AuthData = AuthData else {
+                    let user = database.child("Users")
+                    let userData = [ "Name": name as String ,
+                                    "email": email as String ,
+                                     "isMechanical": isMechanical as Bool
+                    ] as [String : Any]
+                    guard let authData = authData else {
                         fatalError()
                     }
-                    user.child(AuthData.user.uid).setValue(userData)
-                    self.delegate?.AddNewAccountDidSuccess()
+                    user.child(authData.user.uid).setValue(userData)
+                    self.delegate?.addNewAccountDidSuccess()
                 } else {
-                    self.delegate?.AddNewAccountDidFalil(messagem: error?.localizedDescription ?? "Falha ao Criar Usuário")
+                    self.delegate?.addNewAccountDidFalil(messagem: error?.localizedDescription ?? "Falha ao Criar Usuário")
                 }
             }
         }

@@ -30,7 +30,7 @@
                         <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </buttonConfiguration>
                     <connections>
-                        <action selector="ShowLogin:" destination="-1" eventType="touchUpInside" id="oa0-2O-RzS"/>
+                        <action selector="showLogin:" destination="-1" eventType="touchUpInside" id="J2t-Gi-B00"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1DI-pi-j99">
@@ -45,7 +45,7 @@
                         <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </buttonConfiguration>
                     <connections>
-                        <action selector="ShowAddNewAccount:" destination="-1" eventType="touchUpInside" id="fH2-gD-dKY"/>
+                        <action selector="showAddNewAccount:" destination="-1" eventType="touchUpInside" id="VcK-kn-bOZ"/>
                     </connections>
                 </button>
             </subviews>

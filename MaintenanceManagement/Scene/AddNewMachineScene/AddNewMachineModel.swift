@@ -3,22 +3,21 @@ import FirebaseDatabase
 import Firebase
 import FirebaseAuth
 class AddNewMachineModel {
-    
-    func AddMachine(machine:Machine?) {
+
+    func addMachine(machine: Machine?) {
         if let name = machine?.name,
             let description = machine?.description,
             let idMachine = machine?.id {
             let database = Database.database().reference()
             let machineRegistration = database.child("Machines")
-                machineRegistration.observeSingleEvent(of: .value) { dataSnapshot in
+                machineRegistration.observeSingleEvent(of: .value) { _ in
                     let machine = [
-                         "machineName" : "\(name)",
-                         "description" : "\(description)",
-                         "serialNumber" : "\(idMachine)",
+                         "machineName": "\(name)",
+                         "description": "\(description)",
+                         "serialNumber": "\(idMachine)"
                           ]
                      machineRegistration.childByAutoId().setValue(machine)
             }
         }
     }
 }
-

@@ -6,7 +6,7 @@ protocol OpenOrderModelDelegate: AnyObject {
 class OpenOrderModel {
     var machines: [Machine] = []
     weak var delegate: OpenOrderModelDelegate?
-    
+
     func updateMachine() {
         let database = Database.database().reference()
         let machineData = database.child("Machines")
@@ -30,5 +30,4 @@ class OpenOrderModel {
             }
         }
     }
-    
 }

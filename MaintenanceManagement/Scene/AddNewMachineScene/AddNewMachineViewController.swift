@@ -3,11 +3,11 @@ import FirebaseAuth
 import FirebaseDatabase
 
 class AddNewMachineViewController: UIViewController {
-    
+
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var serialNumerTextField: UITextField!
     @IBOutlet weak var descriptionTextField: UITextView!
-    var model =  AddNewMachineModel()
+    var model = AddNewMachineModel()
     override func viewDidLoad() {
         super.viewDidLoad()
         nameTextField.text = "Diejet"
@@ -15,13 +15,10 @@ class AddNewMachineViewController: UIViewController {
         descriptionTextField.text = "Impressora jato de tinta"
     }
 
-    @IBAction func SaveMachine(_ sender: Any) {
-        
-        model.AddMachine(machine: Machine(name: nameTextField.text ?? "teste", id: serialNumerTextField.text ?? "1234test", description: descriptionTextField.text ?? "descripton text",identifier: ""))
+    @IBAction func saveMachine(_ sender: Any) {
+
+        model.addMachine(machine: Machine(name: nameTextField.text ?? "teste", id: serialNumerTextField.text ?? "1234test", description: descriptionTextField.text ?? "descripton text", identifier: ""))
         print("maquina cadastrada")
     }
- 
-}
- 
 
-    
+}

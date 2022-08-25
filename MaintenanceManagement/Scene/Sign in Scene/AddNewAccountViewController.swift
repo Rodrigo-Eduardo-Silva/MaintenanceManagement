@@ -5,7 +5,7 @@ class AddNewAccountViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var confirmTextField: UITextField!
     @IBOutlet weak var nameTextField: UITextField!
-    @IBOutlet weak var IsMechanical: UISwitch!
+    @IBOutlet weak var isMechanical: UISwitch!
     var model =  AddNewAccountModel()
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,8 +16,8 @@ class AddNewAccountViewController: UIViewController {
         model.delegate = self
     }
 
-    @IBAction func CreateNewAccount(_ sender: Any) {
-        model.CreatAccount(user: User(name: nameTextField.text ?? "User teste", email: newEmailTextField.text ?? "User mail", isMechanical: IsMechanical.isOn, password: passwordTextField.text ?? "User Password"))
+    @IBAction func createNewAccount(_ sender: Any) {
+        model.createAccount(user: User(name: nameTextField.text ?? "User teste", email: newEmailTextField.text ?? "User mail", isMechanical: isMechanical.isOn, password: passwordTextField.text ?? "User Password"))
 
     }
     func showLoginError(message: String) {
@@ -34,13 +34,11 @@ class AddNewAccountViewController: UIViewController {
     }
 }
 extension AddNewAccountViewController: AddNewAccountModelDelegate {
-    func AddNewAccountDidSuccess() {
+    func addNewAccountDidSuccess() {
         showDidSucess(message: "Usuário Criado com Sucesso")
     }
 
-    func AddNewAccountDidFalil(messagem: String) {
+    func addNewAccountDidFalil(messagem: String) {
         showLoginError(message: messagem)
     }
 }
-
- 

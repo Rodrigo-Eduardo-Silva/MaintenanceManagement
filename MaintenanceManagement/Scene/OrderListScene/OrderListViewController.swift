@@ -29,10 +29,10 @@ extension OrderListViewController: UITableViewDataSource {
     }
 }
 extension OrderListViewController: UITableViewDelegate {
-    
+
 }
 extension OrderListViewController: OrderLisrModelDelegate {
-    func UpdateOrders() {
+    func updateOrders() {
         DispatchQueue.main.async { [weak self] in
             self?.tableView.reloadData()
         }

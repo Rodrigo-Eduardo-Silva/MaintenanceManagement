@@ -89,7 +89,7 @@
                         <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
                     </buttonConfiguration>
                     <connections>
-                        <action selector="SaveMachine:" destination="-1" eventType="touchUpInside" id="AUE-0z-IeB"/>
+                        <action selector="saveMachine:" destination="-1" eventType="touchUpInside" id="ip7-tR-jZI"/>
                     </connections>
                 </button>
             </subviews>
