@@ -7,7 +7,8 @@ struct OrderMaintenance {
     var state: Bool
     var machineIdentifier: String
     var machineName: String
-    init(user: String, idUser: String, date: Date, descriptionError: String, state: Bool, machineidentifier: String, machineName: String) {
+    var orderIdentifier: String?
+    init(user: String, idUser: String, date: Date, descriptionError: String, state: Bool, machineidentifier: String, machineName: String, orderIdentifier: String) {
         self.user = user
         self.idUser = idUser
         self.date = date
@@ -15,5 +16,6 @@ struct OrderMaintenance {
         self.state = true
         self.machineIdentifier = machineidentifier
         self.machineName = machineName
+        self.orderIdentifier = orderIdentifier
     }
 }

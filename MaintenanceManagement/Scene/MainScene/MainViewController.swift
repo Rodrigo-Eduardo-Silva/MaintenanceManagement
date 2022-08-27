@@ -12,6 +12,7 @@ class MainViewController: UITabBarController {
     }
     let model = MainViewModel()
     override func viewDidLoad() {
+        
         model.delegate = self
         model.configureTabBar(isMechanical: isMechanical)
     }

@@ -17,7 +17,6 @@ class OpenOrdeViewController: UIViewController {
         model.updateMachine()
     }
     func showOpenOrder(machine: Machine) {
-        let machine = machines[tableView.indexPathForSelectedRow!.row]
         let viewController = SaveOrderViewController(machine: machine)
         navigationController?.present(viewController, animated: true, completion: nil)
     }

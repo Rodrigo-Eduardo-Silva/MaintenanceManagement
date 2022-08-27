@@ -14,7 +14,12 @@ class OrderListViewController: UIViewController {
         model.delegate = self
         model.loadOrdes()
     }
+    func showCloseOrder(order: OrderMaintenance) {
+        let viewController = CloseOrderViewController(order: order)
+        present(viewController, animated: true, completion: nil)
+    }
 }
+   
 // MARK: - Table view data source
 extension OrderListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -29,6 +34,11 @@ extension OrderListViewController: UITableViewDataSource {
     }
 }
 extension OrderListViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let order = orders[indexPath.row]
+        showCloseOrder(order: order)
+        
+    }
 
 }
 extension OrderListViewController: OrderLisrModelDelegate {

@@ -7,6 +7,7 @@ protocol MainViewModelDelegate: AnyObject {
 class MainViewModel {
     weak var delegate: MainViewModelDelegate?
     var isMechanical: Bool!
+    var order: OrderMaintenance!
 
     func configureTabBar(isMechanical: Bool) {
         if isMechanical == false {
@@ -22,7 +23,7 @@ class MainViewModel {
         if isMechanical == true {
             let AddNewMachineViewController = AddNewMachineViewController()
             let OrderListViewController = OrderListViewController()
-            let CloseOrderViewController = CloseOrderViewController()
+            let CloseOrderViewController = CloseOrderViewController(order: order)
             let viewControlles = [OrderListViewController, CloseOrderViewController, AddNewMachineViewController]
             AddNewMachineViewController.title = "Adicionar Nova Máquina"
             CloseOrderViewController.title = "Encerrar Chamado"

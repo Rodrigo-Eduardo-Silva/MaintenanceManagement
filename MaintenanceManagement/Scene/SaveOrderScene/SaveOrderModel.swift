@@ -15,6 +15,7 @@ class SaveOrderModel {
             let machineName = order?.machineName {
             let database = Database.database().reference()
             let orderRegistration = database.child("Orders")
+            
             orderRegistration.observeSingleEvent(of: .value) { _ in
                     let orderData = [
                     "date": "\(date.formatted())",
@@ -34,6 +35,7 @@ class SaveOrderModel {
         if let idUserLoged = auth.currentUser?.uid {
             let databese = Database.database().reference()
             let user = databese.child("Users").child(idUserLoged)
+            
             user.observeSingleEvent(of: .value) { dataSnapShot in
                 let data = dataSnapShot.value as? NSDictionary
                 self.user = data?["Name"] as? String ?? "teste"

@@ -2,14 +2,15 @@ import Foundation
 import FirebaseAuth
 import FirebaseDatabase
 import SwiftUI
+
 protocol LoginViewModelDelegate: AnyObject {
     func showMainViewController(isMechanical: Bool)
     func loginViewModelDidFail(message: String)
 }
 
 class LoginViewModel {
+    
     var isMechanical: Bool = true
-
     weak var delegate: LoginViewModelDelegate?
 
      func login(user: String?, password: String?) {
@@ -30,10 +31,12 @@ class LoginViewModel {
             }
         }
     }
+    
     func validateUser(userID: String) {
         let database = Database.database().reference()
         let userPath = database.child("Users")
         let user = userPath.child(userID)
+        
         user.observeSingleEvent(of: .value) { dataUser in
             let data = dataUser.value as? NSDictionary
             guard  let typeUser = data?["isMechanical"] as? Bool else {

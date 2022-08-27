@@ -17,7 +17,8 @@ class OrderListModel {
                                              descriptionError: data?["descriptionError"]  as? String ?? "teste",
                                              state: data?["State"] as? Bool ?? true,
                                              machineidentifier: data?["machineIdentifier"] as? String  ?? "teste",
-                                             machineName: data?["machineName"]  as? String  ?? "teste")
+                                             machineName: data?["machineName"]  as? String  ?? "teste",
+                                             orderIdentifier: dataSnapshot.key)
                 self.orders.append(order)
                 self.delegate?.updateOrders()
          }

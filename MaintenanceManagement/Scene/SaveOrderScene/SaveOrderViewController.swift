@@ -6,7 +6,7 @@ class SaveOrderViewController: UIViewController {
     @IBOutlet weak var chooseDatePicker: UIDatePicker!
     @IBOutlet weak var errorDescriptionLabel: UITextView!
     var model = SaveOrderModel()
-    var machine: Machine!
+    var machine: Machine
     var order: OrderMaintenance!
     init(machine: Machine) {
         self.machine = machine
@@ -19,16 +19,13 @@ class SaveOrderViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         chooseDatePicker.minimumDate = Date()
-        machineLabel.text  = machine.name
+        machineLabel.text = machine.name
         model.authUser()
-
     }
 
     @IBAction func sendOrder(_ sender: Any) {
-        model.saveOrder(order: OrderMaintenance(user: model.user ?? "teste", idUser: model.idUser ?? "123teste", date: chooseDatePicker.date, descriptionError: errorDescriptionLabel.text, state: true, machineidentifier: machine.identifier, machineName: machine.name))
+        model.saveOrder(order: OrderMaintenance(user: model.user ?? "teste", idUser: model.idUser ?? "123teste", date: chooseDatePicker.date, descriptionError: errorDescriptionLabel.text, state: true, machineidentifier: machine.identifier, machineName: machine.name, orderIdentifier: ""))
         dismiss(animated: true, completion: nil)
     }
-
 }
