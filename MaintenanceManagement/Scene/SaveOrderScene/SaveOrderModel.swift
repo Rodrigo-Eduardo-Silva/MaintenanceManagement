@@ -24,7 +24,7 @@ class SaveOrderModel {
                     "machineName": "\(machineName)",
                     "user": "\(user)",
                     "IdUser": "\(idUser)",
-                    "State": order?.state as Any
+                    "State": order?.state.rawValue
                     ]
                 orderRegistration.childByAutoId().setValue(orderData)
             }

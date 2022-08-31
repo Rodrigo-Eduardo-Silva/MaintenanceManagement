@@ -12,7 +12,7 @@ class MainViewController: UITabBarController {
     }
     let model = MainViewModel()
     override func viewDidLoad() {
-        
+    
         model.delegate = self
         model.configureTabBar(isMechanical: isMechanical)
     }
@@ -21,13 +21,14 @@ extension MainViewController: MainViewModelDelegate {
     func mechanicalTabBar(viewControllers: [UIViewController]) {
         self.setViewControllers(viewControllers, animated: false)
         guard let items = self.tabBar.items else { return }
-        let images = ["list.dash", "gearshape.2", "printer.dotmatrix.filled.and.paper"]
+        let images = ["list.dash", "printer.dotmatrix.filled.and.paper"]
         for tabImage in 0...(images.count - 1) {
             items[tabImage].image = UIImage(systemName: images[tabImage])
         }
         self.tabBar.backgroundColor = .gray
         self.tabBar.tintColor = UIColor(named: "System teal Color")
      }
+    
     func userTabBar(viewControllers: [UIViewController]) {
         self.setViewControllers(viewControllers, animated: false)
         guard let items = self.tabBar.items else { return }

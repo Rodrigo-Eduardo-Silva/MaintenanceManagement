@@ -3,9 +3,20 @@ import FirebaseDatabase
 class OrderListViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     var model = OrderListModel()
+    var closerOrdeModel = CloseOrderModel()
     var orders: [OrderMaintenance] {
         model.orders
     }
+    var isMechanical: Bool!
+    init(isMechanical: Bool) {
+        self.isMechanical = isMechanical
+        super.init(nibName: "OrderListViewController", bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
@@ -35,11 +46,11 @@ extension OrderListViewController: UITableViewDataSource {
 }
 extension OrderListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let order = orders[indexPath.row]
-        showCloseOrder(order: order)
-        
+        if self.isMechanical == true {
+            let order = orders[indexPath.row]
+            showCloseOrder(order: order)
+        }
     }
-
 }
 extension OrderListViewController: OrderLisrModelDelegate {
     func updateOrders() {

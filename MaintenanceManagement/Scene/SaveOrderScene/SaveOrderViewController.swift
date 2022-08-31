@@ -25,7 +25,7 @@ class SaveOrderViewController: UIViewController {
     }
 
     @IBAction func sendOrder(_ sender: Any) {
-        model.saveOrder(order: OrderMaintenance(user: model.user ?? "teste", idUser: model.idUser ?? "123teste", date: chooseDatePicker.date, descriptionError: errorDescriptionLabel.text, state: true, machineidentifier: machine.identifier, machineName: machine.name, orderIdentifier: ""))
+        model.saveOrder(order: OrderMaintenance(user: model.user ?? "teste", idUser: model.idUser ?? "123teste", date: chooseDatePicker.date, descriptionError: errorDescriptionLabel.text, state: OrderMaintenance.state.opened.rawValue, machineidentifier: machine.identifier, machineName: machine.name, orderIdentifier: ""))
         dismiss(animated: true, completion: nil)
     }
 }

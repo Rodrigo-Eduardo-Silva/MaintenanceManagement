@@ -36,8 +36,8 @@ extension LoginViewController: LoginViewModelDelegate {
     func showMainViewController(isMechanical: Bool) {
         let viewController = MainViewController(isMechanical: isMechanical)
         self.navigationController?.pushViewController(viewController, animated: true)
+        navigationItem.backBarButtonItem = UIBarButtonItem(title: "Deslogar", style: .plain, target: nil, action: nil)
     }
-
     func loginViewModelDidFail(message: String) {
         showLoginError(message: message)
     }

@@ -46,5 +46,4 @@ extension OpenOrdeViewController: OpenOrderModelDelegate {
             self?.tableView.reloadData()
         }
     }
-
 }

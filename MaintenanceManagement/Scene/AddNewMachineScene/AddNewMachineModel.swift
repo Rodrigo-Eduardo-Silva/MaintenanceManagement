@@ -10,7 +10,7 @@ class AddNewMachineModel {
             let idMachine = machine?.id {
             let database = Database.database().reference()
             let machineRegistration = database.child("Machines")
-                machineRegistration.observeSingleEvent(of: .value) { _ in
+                machineRegistration.observeSingleEvent(of: .value) { _ in 
                     let machine = [
                          "machineName": "\(name)",
                          "description": "\(description)",

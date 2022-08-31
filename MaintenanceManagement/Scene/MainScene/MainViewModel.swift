@@ -12,7 +12,7 @@ class MainViewModel {
     func configureTabBar(isMechanical: Bool) {
         if isMechanical == false {
             let AddNewMachineViewController = AddNewMachineViewController()
-            let OrderListViewController = OrderListViewController()
+            let OrderListViewController = OrderListViewController(isMechanical: isMechanical)
             let OpenOrderViewController = OpenOrdeViewController()
             let viewControlles = [OrderListViewController, OpenOrderViewController, AddNewMachineViewController]
             AddNewMachineViewController.title = "Adicionar Nova Máquina"
@@ -22,11 +22,9 @@ class MainViewModel {
         }
         if isMechanical == true {
             let AddNewMachineViewController = AddNewMachineViewController()
-            let OrderListViewController = OrderListViewController()
-            let CloseOrderViewController = CloseOrderViewController(order: order)
-            let viewControlles = [OrderListViewController, CloseOrderViewController, AddNewMachineViewController]
+            let OrderListViewController = OrderListViewController(isMechanical: isMechanical)
+            let viewControlles = [OrderListViewController, AddNewMachineViewController]
             AddNewMachineViewController.title = "Adicionar Nova Máquina"
-            CloseOrderViewController.title = "Encerrar Chamado"
             OrderListViewController.title = "Chamados Abertos"
             delegate?.mechanicalTabBar(viewControllers: viewControlles)
         }
